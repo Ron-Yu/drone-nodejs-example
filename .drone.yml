@@ -13,6 +13,8 @@ pipeline:
     group: testing
     commands:
       - yarn run test
+    environment:
+      - port=9000
 
   lint:
     image: node:8.6.0
